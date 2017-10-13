@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="icon" href="./img/logo.png" type="image/png">
+  <title>Vue.js</title>
+</head>
+
+<body class="">
+  <div id="mobile-bar" class="top">
+    <a class="menu-button"></a>
+    <a class="logo" href=""></a>
+  </div>
+  <div id="sidebar" class="">
+    <div class="sidebar-inner">
+      <ul class="extra-menu">
+        <li>
+          <form id="search-bar">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
+              <input type="text" id="search-query-nav" class="search-query st-default-search-input aa-input" autocomplete="off" spellcheck="false"
+                role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+                style="position: relative; vertical-align: top;">
+            </span>
+          </form>
+        </li>
+        <li class="menu-dropdown-box learn">
+          <a class="menu-link">学习</a>
+          <span class="arrow"></span>
+          <ul class="menu-dropdown">
+            <li>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">教程</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">API</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">风格指南 (beta)</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">示例</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-dropdown-box ecosys">
+          <a class="menu-link">生态系统</a>
+          <span class="arrow"></span>
+          <ul class="menu-dropdown">
+            <li>
+              <a href="" class="menu-link">Roadmap</a>
+            </li>
+            <li>
+              <h4>帮助</h4>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">论坛</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">聊天室</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">模板</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>信息</h4>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">Twitter</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">博客</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">工作</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>核心插件</h4>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">Vue Router</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">Vuex</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">Vue 服务端渲染</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>资源列表</h4>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">官方仓库</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">Vue 优选</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">Vue 资源</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="menu-link">团队</a>
+        </li>
+        <li class="menu-dropdown-box support">
+          <a class="menu-link">支持 Vue</a>
+          <span class="arrow"></span>
+          <ul class="menu-dropdown">
+            <li>
+              <ul>
+                <li>
+                  <a href="" class="menu-link">商店</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">在 OpenCollective 支持我们</a>
+                </li>
+                <li>
+                  <a href="" class="menu-link">在 Patreon 支持 Evan</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-dropdown-box language">
+          <a class="menu-link">多语言</a>
+          <span class="arrow"></span>
+          <ul class="menu-dropdown">
+            <li>
+              <a href="" class="menu-link">Enligh</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">日本語</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">Русский</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">한국어</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">Português</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">Français</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="menu-link">参与翻译</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="header">
+    <a id="logo" href="">
+      <span>Vue.js</span>
+    </a>
+    <ul id="menu">
+      <li>
+        <form id="search-bar">
+          <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
+            <input type="text" id="search-query-nav" class="search-query st-default-search-input aa-input" autocomplete="off" spellcheck="false"
+              role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+              style="position: relative; vertical-align: top;">
+          </span>
+        </form>
+      </li>
+      <li class="menu-dropdown-box learn">
+        <a class="menu-link">学习</a>
+        <span class="arrow"></span>
+        <ul class="menu-dropdown">
+          <li>
+            <ul>
+              <li>
+                <a href="" class="menu-link">教程</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">API</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">风格指南 (beta)</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">示例</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-dropdown-box ecosys">
+        <a class="menu-link">生态系统</a>
+        <span class="arrow"></span>
+        <ul class="menu-dropdown">
+          <li>
+            <a href="" class="menu-link">Roadmap</a>
+          </li>
+          <li>
+            <h4>帮助</h4>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="" class="menu-link">论坛</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">聊天室</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">模板</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>信息</h4>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="" class="menu-link">Twitter</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">博客</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">工作</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>核心插件</h4>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="" class="menu-link">Vue Router</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">Vuex</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">Vue 服务端渲染</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>资源列表</h4>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="" class="menu-link">官方仓库</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">Vue 优选</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">Vue 资源</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="" class="menu-link">团队</a>
+      </li>
+      <li class="menu-dropdown-box support">
+        <a class="menu-link">支持 Vue</a>
+        <span class="arrow"></span>
+        <ul class="menu-dropdown">
+          <li>
+            <ul>
+              <li>
+                <a href="" class="menu-link">商店</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">在 OpenCollective 支持我们</a>
+              </li>
+              <li>
+                <a href="" class="menu-link">在 Patreon 支持 Evan</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-dropdown-box language">
+        <a class="menu-link">多语言</a>
+        <span class="arrow"></span>
+        <ul class="menu-dropdown">
+          <li>
+            <a href="" class="menu-link">Enligh</a>
+          </li>
+          <li>
+            <a href="" class="menu-link">日本語</a>
+          </li>
+          <li>
+            <a href="" class="menu-link">Русский</a>
+          </li>
+          <li>
+            <a href="" class="menu-link">한국어</a>
+          </li>
+          <li>
+            <a href="" class="menu-link">Português</a>
+          </li>
+          <li>
+            <a href="" class="menu-link">Français</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="" class="menu-link">参与翻译</a>
+      </li>
+    </ul>
+  </div>
+  <div id="outer">
+    <div class="inner">
+      <div class="left">
+        <img class="outer-logo" src="./img/logo.png">
+      </div>
+      <div class="right">
+        <h2>Vue.js</h2>
+        <h1>渐进式
+          <br />JavaScript 框架</h1>
+        <p>
+          <a class="button" href="">起步</a>
+          <a class="button b" href="">GITHUB</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="intro">
+    <div class="inner">
+      <div class="keyword">
+        <h2>易用</h2>
+        <p>已经会了 HTML、CSS、JavaScript？即刻阅读指南开始构建应用！</p>
+      </div>
+      <div class="keyword">
+        <h2>灵活</h2>
+        <p>不断繁荣的生态系统，可以在一个库和一套完整框架之间自如伸缩</p>
+      </div>
+      <div class="keyword">
+        <h2>高效</h2>
+        <p>20kB min+gzip 运行大小
+          <br /> 超快虚拟 DOM
+          <br /> 最省心的优化
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="sponsors">
+    <div class="inner">
+      <h3>Patreon 赞助者</h3>
+      <a href="" style="width: 160px;">
+        <img src="./img/xiaozhuanlan.png" style="width: 160px;">
+      </a>
+      <br />
+      <a href="" class="button b">成为赞助者！</a>
+      <div class="OpenCollective">
+        <h3>OpenCollective 赞助者</h3>
+        <h4>白金赞助者</h4>
+        <a href="">
+          <img src="./img/become_sponsor.svg">
+        </a>
+        <h4>黄金赞助者</h4>
+        <a href="">
+          <img src="./img/logo@2x.png">
+        </a>
+        <a href="">
+          <img src="./img/become_sponsor.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <a href="">
+      <img src="./img/shuttleworth.png" style="width: 200px;">
+    </a>
+    <p>遵循
+      <a href="">MIT开源协议</a>
+      <br />Copyright © 2014-2017 Evan You
+    </p>
+  </div>
+  <!-- js脚本 调整自适应界面 -->
+  <script>
+    var spon = document.getElementById('sponsors')
+    var rolltospon = false
+    var rolltop = false
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset < 160 && !rolltop) {
+        rolltop = true;
+        document.getElementById('mobile-bar').classList.add('top')
+      } else if (window.pageYOffset >= 160 && rolltop) {
+        rolltop = false;
+        document.getElementById('mobile-bar').classList.remove('top')
+      }
+    })
+    window.addEventListener('scroll', function () {
+      if (spon.offsetTop - window.pageYOffset < 50 && !rolltospon) {
+        rolltospon = true;
+        spon.classList.add('act');
+      } else if (spon.offsetTop - window.pageYOffset >= 50 && rolltospon) {
+        rolltospon = false;
+        spon.classList.remove('act');
+      }
+    })
+  </script>
+  <script>
+    var sidebar_menu = document.getElementById('sidebar');
+    var sidebar_open = false;
+    var temp = document.getElementById('mobile-bar');
+    var menu_button = temp.getElementsByClassName('menu-button')[0];
+    window.onclick = function (event) {
+      if (event.target.className == 'menu-button') {
+        sidebar_menu.classList.add('open');
+      } else {
+        var x = event.target;
+        while (x != null && x.id != 'sidebar') {
+          x = x.parentNode;
+        }
+        if (x == null) {
+          sidebar_menu.classList.remove('open');
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
